@@ -10,7 +10,7 @@ app.use(cors()); // Allow all origins
 
 // Default route
 app.get('/', (req, res) => {
-  res.send('Hello Shalu Shree I am from Express Demo App!');
+  res.send('Hello Shalu and Sonal Shree I am from Express Demo App!');
 });
 
 // Ping route
@@ -21,15 +21,15 @@ app.get('/ping', (req, res) => {
 // New route: Get name info
 app.get('/name', (req, res) => {
   res.json({
-    firstName: 'Shalu',
-    lastName: 'Kumari',
+    firstName: 'ShaluSonal',
+    lastName: 'Shree',
     role: 'Backend Developer'
   });
 });
 
 // Start server
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'http://localhost:4000'
 }));
 
 app.listen(port, () => {
