@@ -10,7 +10,7 @@ app.use(cors()); // Allow all origins
 
 // Default route
 app.get('/', (req, res) => {
-  res.send('Hello Shalu and Sonal Shree I am from Express Demo App! How are you');
+  res.send('Hello Shalu and Sonal Shree I am from Express Demo App! How are you ?');
 });
 
 // Ping route
